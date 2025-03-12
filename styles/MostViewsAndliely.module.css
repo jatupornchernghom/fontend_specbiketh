@@ -1,0 +1,59 @@
+.MLV {
+    padding: 0 10px 10px 10px;
+    width: 100%
+}
+
+.MLV h3 {
+  text-align: center;
+}
+
+.card img {
+  max-height: 140px;
+  max-width: 215px;
+}
+
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.card{
+  width: 230px;
+
+}
+
+.card p {
+  font-size: 15px;
+}
+
+.card h4 {
+  margin: 10px 0px 10px 0px;
+}
+
+.card span {
+  font-size: 12px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2; /* Number of lines to show */
+}
+
+
+@media (max-width: 1080px) {
+  
+    .MLV  {
+      width: 100%;
+      padding: 0;
+    }
+    .card {
+      width: 170px;
+    }
+    .container{
+      display: grid;
+      grid-template-columns: auto auto;
+
+    }
+    
+   
+  }

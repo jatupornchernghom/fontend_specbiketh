@@ -1,0 +1,109 @@
+.fillter {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-left: 20%;
+    height: 34vh;
+    max-width: 500px;
+    background-color: #ffffff;
+    border-radius: 5%;
+}
+
+.container {
+    height: 250px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.item {
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn {
+    margin-top: 30px;
+    border-radius: 3px;
+    color: white;
+    background-color: black;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+}
+
+
+.Brand{
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+}
+
+.centeredText {
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+    padding: 0;
+    border: 1px solid ga;
+    border-radius: 12px;
+}
+
+.content h5 {
+    margin: 5px 5px 10px 0;
+    padding: 0;
+}
+
+.minPrice, .maxPrice, .height {
+    width: 35%;
+    padding: 10px;
+    margin: 5px; /* Add margin to create spacing */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.minPrice::placeholder, .maxPrice::placeholder {
+    color: #999;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .minPrice, .maxPrice {
+        width: 15%;
+        font-size: 14px;
+    }
+    .content h4 {
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    .fillter {
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        margin-left: 3%;
+        max-width: 300px;  
+        height: 230px;
+    }
+    .Brand{
+        display: block;
+    }
+    .btn {
+        margin-top: 0px;
+
+    }
+}
+
+/* Media query for smaller screens, adjust as needed */
+@media (max-width: 480px) {
+    .minPrice, .maxPrice {
+        width: 15%;
+        font-size: 12px;
+    }
+}

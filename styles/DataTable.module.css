@@ -1,0 +1,80 @@
+/* DataTable.module.css */
+
+.DataTable {
+    margin: 20px;
+    margin-left: 50px;
+}
+
+.lineOne {
+    display: flex;
+    margin: 30px 0 0 0;
+    border-bottom: 1px solid gray;
+}
+
+.box {
+    display: block;
+
+}
+.box h3 {
+    width: 75px;
+    margin: 0 0 7px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.box img {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+}
+.box h4{
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    text-align: center;
+
+
+}
+.samary_detail {
+    width: 300px;
+}
+
+.Total_weight {
+    padding: 15px;
+}
+
+.addToCompare {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addToCompare button {
+    margin: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 480px) {
+    .DataTable {
+        margin: 20px;
+        
+
+    }
+    .samary_detail h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    .lineOne {
+        display: flex;
+        
+        border-bottom: 1px solid gray;
+        margin: 0;
+
+    }
+  }

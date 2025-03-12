@@ -1,0 +1,59 @@
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: black;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px; 
+    max-width: 900px; 
+    margin-left: 20px;
+}
+
+
+.container {
+   display: flex; 
+   margin-left: 5%;
+   gap: 30px;
+   min-height: 80vh;
+}
+
+.allbicycles{
+
+    width: 60%;
+}
+
+.CategoryTag {
+    background-color: rgb(0, 0, 0);
+    padding: 10px 0 10px 100px;
+}
+
+.CategoryTag{
+    color:  white;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+}
+
+@media (max-width: 768px) {
+    .container{
+        display: block;
+        margin-left: 1%;
+    }
+    .allbicycles{
+        width: 100%;
+    }
+    .box{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 4 columns */
+        grid-template-rows: repeat(auto-fill, minmax(150px, 1fr)); /* Auto-fill rows, each with a minimum height of 100px */
+        gap: 5px; /* Adjust the gap between grid items as needed */
+        margin-left: 0px;
+    }
+}

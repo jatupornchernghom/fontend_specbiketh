@@ -1,0 +1,55 @@
+
+.tag{
+    display: flex;
+    margin-left: 20%;
+    margin-bottom: 15px;
+    margin-top: 8px;
+    height: 50px;
+    align-items: center;
+}
+
+
+
+.tag a{
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from the parent */
+}
+.spaceBetweenSections{
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+
+@media (max-width: 920px) {
+  .tag{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-left: 5%;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+}
+
+
+@media (max-width: 480px) {
+    .tag{
+        display: flex;
+        align-items: center;
+        height: 30px;
+        margin-left: 4%;
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+    .spaceBetweenSections{
+        font-size: 12px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .tag a {
+        font-size: 15px;
+    }
+    
+}
+
+  

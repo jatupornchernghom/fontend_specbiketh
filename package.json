@@ -1,0 +1,33 @@
+{
+  "name": "fontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@custom-react-hooks/use-media-query": "^1.5.1",
+    "@emotion/react": "^11.11.1",
+    "@next/swc-wasm-nodejs": "^15.1.6",
+    "axios": "^1.6.2",
+    "bcrypt": "^5.1.1",
+    "cookie": "^1.0.2",
+    "eslint": "8.45.0",
+    "eslint-config-next": "13.4.12",
+    "js-cookie": "^3.0.5",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.3",
+    "next": "^15.2.1",
+    "next-auth": "^4.24.11",
+    "next-sitemap": "^4.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-spinners": "^0.13.8",
+    "react-sweetalert2": "^0.6.0",
+    "styled-components": "^6.0.5"
+  }
+}

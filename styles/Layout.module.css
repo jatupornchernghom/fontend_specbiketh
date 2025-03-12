@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the container always takes full height */
+  }
+  
+  .content {
+    flex-grow: 1; /* This allows the center content to expand */
+    overflow: auto; /* Allows scrolling if the content overflows */
+  }
+  
+  .Footer {
+    background-color: lightcoral; /* Example background color */
+    padding: 10px; /* Footer padding */
+  }
+  

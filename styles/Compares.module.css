@@ -1,0 +1,202 @@
+.container {
+    display: block;
+    text-align: center;
+    max-height: 350vh; /* Optionally set a height for vertical centering */
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.notthing{
+    height: 70vh;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card h1 {
+    position: absolute;
+    top: 18%;
+    max-height: fit-content;
+    color: #bfbfbf;
+
+}
+
+  
+  /* Add any other styles you need for your container */
+.image{
+    display: flex;
+}
+
+.chose1{
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 270px;
+    border-radius: 10px;
+    
+}
+
+.btnColse{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 350px;
+  width: 250px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.custom_select {
+    width: 200px; /* Set the width of the select box */
+    padding: 10px; /* Add padding for better appearance */
+    font-size: 16px; /* Set the font size */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+    background-color: #fff; /* Set the background color */
+    color: #333; /* Set the text color */
+    outline: none; /* Remove the default focus outline */
+    /* Add any other styles you desire */
+  }
+
+
+  .showProducts {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    height: calc(100% - 100px); /* Subtract the total padding (10px + 10px) from 100% */
+  }
+  /* Style for the selected option */
+  .custom_select option {
+    background-color: #fff; /* Set the background color of each option */
+    color: #333; /* Set the text color of each option */
+  }
+  
+.showProducts{
+    display: flex;
+    flex-direction: column;
+}
+
+.productslist {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin: 10px 0 0 0;
+    border: 1px gray solid;
+}
+
+.productslist h4 {
+    margin: 7px 0 7px 0;
+}
+
+.chooseBtn {
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: black;
+    color: white;
+}
+
+.card_img {
+    position: relative;
+}
+
+.btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    background-color: rgb(239, 53, 53);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.image img {
+    max-width: 350px;
+    margin: 20px;
+    max-height: 230px;
+}
+
+.detail {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .detail tbody tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .detail tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+  }
+  
+  .detail td {
+    padding: 12px 15px;
+    text-align: center;
+  }
+  
+  .detail td:first-child {
+    text-align: left;
+    /* width: 30%; */
+  }
+  
+  .header {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .notthing {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+  }
+@media (max-width: 480px) {
+    .chose1{
+        margin: 0 0px;
+        width: 150px;
+        height: 270px;    
+    }
+    .image img {
+        max-width: 188px;
+        margin: 5px;
+        max-height: 130px;
+    }
+    
+.notthing{
+    height: 50vh;
+}
+.btn {
+    width: 20px;
+    height: 22px;
+}
+.card h1 {
+    top: 22%;
+
+
+}
+
+        
+}

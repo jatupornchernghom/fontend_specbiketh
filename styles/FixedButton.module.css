@@ -1,0 +1,32 @@
+/* FixedButton.module.css */
+.fixedBtn {
+    position: fixed;
+    bottom: 70px;
+    margin: 0;
+    right: 6%;
+    display: flex; /* Initially hidden */
+    border-radius: 20px; /* Increased border-radius for a more round shape */
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 30px; /* Increased border-radius for a more round shape */
+    cursor: pointer;
+    display: block;
+    z-index: 1000;
+  }
+  
+  .text h4{
+   margin: 0;
+   padding: 0;
+
+  }
+  .text  {
+    text-align: center;
+
+  }
+
+  .fixedBtn  {
+    text-decoration: none;
+  }
+  

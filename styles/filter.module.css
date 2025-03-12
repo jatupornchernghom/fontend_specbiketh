@@ -1,0 +1,244 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 30px;
+    }
+  
+  .filter {
+    width: 250px;
+    height: auto;
+    background: #fff;
+    border-radius: 10px;
+    padding: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .toggleBtn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+
+  .centeredText {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .section h5 {
+    font-size: 18px;
+    margin: 5px 0 0 0;
+  }
+
+  .section {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .section p {
+    font-size: 14px;
+  }
+  
+ 
+  
+  .priceInputs input {
+    width: calc(50% - 5px);
+    padding: 8px;
+    margin: 5px 0 5px 0; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  
+  .placeType button,
+  .options button {
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+  }
+  
+  .selected {
+    background: black;
+    color: white;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .clear {
+    background: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+  }
+  
+  .submit {
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .rangeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .rangeInput {
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s;
+  }
+  
+  .rangeInput::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .rangeInput::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+
+  .open {
+    height: 350px;
+  }
+
+  .closed {
+    height: 115px;
+  }
+  
+
+
+  /* Media query for smaller screens, adjust as needed */
+@media (max-width: 500px) {
+
+  .container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;  
+    height:auto; /* 280 px*/
+    padding: 0 0 15px 0;
+  }
+  
+  .toggleBtn {
+    display: block;
+    width: 100%;
+    height: 28px;
+    padding: 0px;
+    background-color: white;  
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-top: 1px solid black;
+  }
+  
+
+  .filter {
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    background: #fff;
+    border-radius: 10px;
+    padding: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .centeredText {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .section {
+
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+  .section p{
+    font-size: 12px;
+    margin: 5px 0 0 0;
+  }
+  
+  .section h5 {
+    font-size: 12px;
+    margin: 5px 0 0 0;
+  }
+
+  
+  .priceInputs input {
+    width: calc(50% - 5px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .minPrice {
+    margin-right: 10px;
+  }
+  
+  .actions{
+    margin-top: 15px;
+  }
+
+
+  .toggleBtn {
+    display: block;
+    width: 100%;
+  
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+.closed {
+  height: 55px;
+}
+
+.open {
+  height: auto;
+}
+
+
+
+
+
+
+}

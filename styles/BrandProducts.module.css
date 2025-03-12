@@ -1,0 +1,90 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px; /* Adjust the gap between grid items as needed */
+    max-width: 900px; /* Limit the maximum width of the grid */
+    margin-left: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    /* Add any additional styling for your card here */
+}
+
+.box img {
+    max-width: 200px;
+    max-height: 130px;
+}
+.box {
+    display: block;
+    text-align: center;
+    background-color: #ffffff; /* Set your desired background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Set your desired box shadow */
+    padding: 16px; /* Add padding for better spacing */
+    border-radius: 8px; /* Add border-radius for rounded corners */
+    transition: transform 0.3s ease-in-out; /* Optional: Add a smooth transition effect */
+ 
+}
+
+.box h5  {
+    margin: 5px;
+}
+.box:hover {
+    transform: translateY(-3px); /* Optional: Lift the box a bit on hover */
+ }
+.card a{
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from the parent */
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 4 columns */
+        grid-template-rows: repeat(auto-fill, minmax(150px, 1fr)); /* Auto-fill rows, each with a minimum height of 100px */
+        gap: 5px; /* Adjust the gap between grid items as needed */
+        margin-left: 40px;
+
+
+    }
+    .box h5  {
+        margin: 0;
+    }
+    .card {
+    gap: 5px;
+
+    }
+    .box {
+        display: block;
+        text-align: center;
+        background-color: #ffffff; /* Set your desired background color */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Set your desired box shadow */
+        padding: 5px; /* Add padding for better spacing */
+        border-radius: 8px; /* Add border-radius for rounded corners */
+        transition: transform 0.3s ease-in-out; /* Optional: Add a smooth transition effect */
+     
+    }
+    .box img {
+        max-width: 180px;
+    }
+
+
+
+
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 4 columns */
+        grid-template-rows: repeat(auto-fill, minmax(150px, 1fr)); /* Auto-fill rows, each with a minimum height of 100px */
+        gap: 5px; /* Adjust the gap between grid items as needed */
+        margin-left: 8px;
+
+    }
+}

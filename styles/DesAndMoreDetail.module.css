@@ -1,0 +1,183 @@
+.box {
+  display: flex
+}
+/* Apply box-sizing to include padding and border in the element's total width and height */
+.description span {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    border-radius: 5px;
+    resize: vertical; /* Allow vertical resizing */
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  
+  /* Style for the textarea when it's focused */
+
+
+  .description h2 {
+    display: flex;
+    justify-content: center;
+  }
+
+
+.detailname  {
+  padding: 10px;
+  width: 200px;
+  border-bottom: gray 1px solid;
+}
+.headername {
+  padding: 10px;
+  width: 150px;
+  border-bottom: gray 1px solid;
+
+
+}
+.findinny {
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+
+}
+.shoppee {
+  display: flex;
+  justify-content: center ;
+  flex-direction: row;
+  
+}
+
+.shoppee img{
+  width: 80px;
+  height: auto;
+}
+
+.findinny h3{
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+
+}
+
+.shoppee a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  
+}
+
+
+
+
+ .lazada1 {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  background-color: #FF5722; 
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+ 
+.lazada {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  background-color: #3F26A1; 
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.lazada:hover {
+  background-color: #1f0b6f; 
+}
+
+.lazada1:hover {
+  background-color: #E64A19; 
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+}
+
+.comment_card h4 {
+  margin: 7px 0 0px 0;
+  font-size: 15px;
+}
+
+.comment_card span {
+  font-size: 10px;
+}
+
+.centerTable {
+  max-width: 400px;
+}
+
+.Video_Review h3 {
+  text-align: center;
+}
+
+.Video_Review{
+  padding: 10px 10px 10px 40px
+}
+
+
+
+
+
+  @media (max-width: 1080px) {
+    .box {
+      flex-direction: column;
+    }
+    .detailname  {
+      padding: 10px;
+      width: 170px;
+      border-bottom: gray 1px solid;
+    }
+    .alldetail {
+      text-align: center;
+    }
+    .centerTable{
+      margin: auto;
+    }
+    .frame {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio for widescreen videos */
+    }
+    .Video_Review{
+      padding: 0;
+    }
+    
+    .frame iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .frame {
+      padding-bottom: 75%; /* Adjust the aspect ratio for smaller screens */
+    }
+   
+  }
+
+  @media (max-width: 480px) {
+    .shoppee{
+      display: block;
+    }
+    .shoppee img{
+      width: 100px;
+      height: auto;
+    }
+   
+  }
