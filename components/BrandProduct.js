@@ -8,9 +8,8 @@ export default function BrandProducts({ products }) {
       <div className={styles.card}>
         {products && products.length > 0 ? (
           products.map((product) => (
-            <Link href={'/products/detail/' + product._id} key={product._id}>
+            <Link href={'/products/detail/' + product.title} key={product._id}>
               <div className={styles.box}>
-                {/* ✅ Use Image from Next.js */}
                 <Image 
                   src={product.images[0]} 
                   alt={product.title} 

@@ -79,9 +79,7 @@ export default function Header({ children }) {
 
           <nav className={`${styles.nav} ${isMenuOpen ? styles.active : ""}`}>
             <button className={styles.close_button} onClick={closeMenu}>
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
-                <path d="M 7.7070312 6.2929688 L 6.2929688 7.7070312 L 23.585938 25 L 6.2929688 42.292969 L 7.7070312 43.707031 L 25 26.414062 L 42.292969 43.707031 L 43.707031 42.292969 L 26.414062 25 L 43.707031 7.7070312 L 42.292969 6.2929688 L 25 23.585938 L 7.7070312 6.2929688 z"></path>
-              </svg>
+            <svg width="40" height="40" viewbox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" stroke="black" stroke-width="4" /></svg>
             </button>
 
             <Link href="/" onClick={closeMenu}>หน้าแรก</Link>

@@ -107,9 +107,7 @@
   }
   .close_button svg {
     padding: 3px;
-    background-color: rgb(255, 71, 71);
-    border: 1px solid gray;
-    border-radius: 5px;
+
   }
 
   .nav {
@@ -129,5 +127,10 @@
   }
   .close_button {
   display: block;
+}
+.nav a{
+  padding: 10px 0 15px 0;
+  width: 100%;
+  border-bottom: solid 1px black;
 }
 }

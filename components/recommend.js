@@ -12,7 +12,7 @@ export default function MostViewsAndlikely({recommend}) {
                     {recommend?.length > 0 && recommend.map((recommend,index) => (
                         <div className={styles.card} key={index}>
                         <a href={"" +recommend._id}data-id="1">
-                            <Image src={recommend.images[0]} alt={`Image ${index + 1}`} width={100} height={100} quality={100} /> 
+                            <Image src={recommend.images[0]} alt={`Image ${index + 1}`} width={250} height={250} quality={100} /> 
                         </a>
                            
                             <h4> {recommend.title}</h4>

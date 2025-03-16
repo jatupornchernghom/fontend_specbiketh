@@ -13,6 +13,9 @@
   justify-content: center;
   transition: transform 0.2s ease;
 }
+.containermain {
+  min-height: 100vh;
+}
 
 .favoriteActive {
   color: #e74c3c;
@@ -161,7 +164,6 @@
 @media (max-width: 920px) {
   .card_Wrapper {
     margin-left: 5%;
-    max-height: 400vh;
     max-width: 1080px;
 
   }

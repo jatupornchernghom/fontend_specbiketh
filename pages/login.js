@@ -102,7 +102,6 @@ export default function Account() {
     localStorage.removeItem('productFav');
     updateProductFav([])
     await signIn("google", { callbackUrl: '/' });
-    // Note: No need to handle errors here as NextAuth will handle redirection
   };
 
   const toggleMode = () => {

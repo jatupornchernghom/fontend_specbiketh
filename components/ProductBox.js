@@ -65,7 +65,7 @@ export default function Productbox({ _id, title, price, images, onFavoriteChange
 
   return (
     <div key={_id} className={styles.bikeCard}>
-      <Link href={`/products/detail/${_id}`}>
+      <Link href={`/products/detail/${title}`}>
         <div className={styles.imageContainer}>
           <Image
             src={images[0]}
@@ -76,7 +76,9 @@ export default function Productbox({ _id, title, price, images, onFavoriteChange
             objectFit="cover"
           />
         </div>
+        <div>
         <h3>{title}</h3>
+        </div>
         <div className={styles.priceContainer}>
           <p className={styles.price}>{price.toLocaleString()} บาท</p>
           <button

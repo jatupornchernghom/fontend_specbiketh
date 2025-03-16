@@ -98,7 +98,7 @@ export default function DetailForm({ productInfo, recommend }) {
       }
     };
     fetchData();
-  }, [_id, views]);
+  }, []);
 
   const handleImageItemHover = (index) => {
     setHoveredImageIndex(index);

@@ -13,18 +13,19 @@ export default function Detail(){
     const [recommend, setRecommend] = useState(null)
 
     const router = useRouter();
-    const  {id}  = router.query;
-
+    const title = router.query.id;
     useEffect(() => {
-        if (!id) {
+        if (!title) {
             return;
         }
         
-        axios.get('/api/products?id=' + id).then(res => {
+        axios.get('/api/products?name=' + title).then(res => {
+            console.log(res.data)
             setProductInfo(res.data.products);
             setRecommend(res.data.recommend)
         });
-    }, [id]);
+
+    }, [title]);
     
     return (
         <LayoutComapare>
