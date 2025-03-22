@@ -29,14 +29,12 @@ export default NextAuth({
         const { email, password } = credentials;
         
         try {
-          // Find user by email
           const user = await Login.findOne({ email });
           
           if (!user) {
             throw new Error("ไม่พบผู้ใช้ด้วยอีเมลนี้");
           }
           
-          // Check if password exists and is correct
           if (!user.password) {
             throw new Error("บัญชีนี้ไม่ได้ใช้รหัสผ่านในการเข้าสู่ระบบ");
           }
@@ -47,7 +45,6 @@ export default NextAuth({
             throw new Error("รหัสผ่านไม่ถูกต้อง");
           }
           
-          // Return user object if authentication is successful
           return {
             id: user._id.toString(),
             name: user.name,
@@ -64,7 +61,6 @@ export default NextAuth({
     async signIn({ user, account, profile }) {
       await connectDb();
       
-      // For Google sign-in, check if user exists and create if not
       if (account.provider === "google") {
         const existingUser = await Login.findOne({ email: user.email });
         
@@ -73,7 +69,6 @@ export default NextAuth({
             name: user.name,
             email: user.email,
             profileImage: user.image,
-            // No password for Google users
           });
           await newUser.save();
         }
@@ -105,7 +100,7 @@ export default NextAuth({
     updateAge: 24 * 60 * 60, // 24 hours
     cookie: {
         secure: process.env.NODE_ENV === "production",
-        sameSite: "lax", // or 'strict'
+        sameSite: "lax", 
         httpOnly: true,
         path: "/",
     },
